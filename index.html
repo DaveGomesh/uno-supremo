@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+
+    <link rel="shortcut icon" href="assets/brand/UNO_Logo_32x32.png" type="image/x-icon">
+    <title>UNO Supremo · v2.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/dist/css/product.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header sticky-top py-1">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+            <!-- <a class="py-2" href="#" aria-label="Product">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                    viewBox="0 0 24 24">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Cart</a> -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-1 fw-normal">UNO</h1>
+                <h1 class="display-1 fw-normal">Supremo</h1>
+                <p class="lead fw-normal">Compre agora ou cale-se para sempre.</p>
+                <p class="fw-normal">v2.3</p>
+                <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+            </div>
+            <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+            <!-- RGBY -->
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5 fw-normal">RGBY</h2>
+                    <p class="lead">
+                        Dependendo da cor da última carta jogada, todos comprarão uma certa quantidade de cartas.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Modo Ataque:</strong> Faz todos os outros jogadores comprarem uma certa quantidade de cartas dependendo da cor da última carta jogada antes dessa. A quantidade de cartas é indicada na tabela desenhada na própria carta. Pode ser jogada apenas na vez do jogador.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Modo Defesa:</strong> Em uma sequência de <strong>+2</strong> e/ou <strong>+4</strong> impede o jogador de comprar quantidades absurdas de cartas, tendo que comprar apenas o valor da última carta jogada.
+                    </p>
+                </div>
+
+                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/RGBY.jpg" height="300px">
+                </div>
+            </div>
+
+            <!-- +9 -->
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5 fw-normal">+9</h2>
+
+                    <p class="lead">
+                        Funciona exatamente igual a regra da carta 9, porém, o último a bater compra <strong>+9</strong> cartas.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Detalhes:</strong> Não pode ser usada com uma carta 9 comum. Todos os jogadores precisam bater em cima da carta, inclusive quem jogou a carta. <span class="fst-italic text-decoration-line-through">Se Wesley tiver jogando, automaticamente ele comprará 9 cartas.</span> Só pode ser jogada na vez do jogador.
+                    </p>
+                </div>
+                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/+9.jpg" height="300px">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+            <!-- Bucho Inchado -->
+            <div class="order-2 text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5 fw-normal">Bucho Inchado</h2>
+                    <p class="lead">
+                        Também conhecida como <span class="fw-normal fst-italic">"Bucho cheio de cartas"</span>, essa carta possibilita o jogador distribuir 10 cartas entre os outros jogadores.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Detalhes:</strong> Com essa carta o jogador faz comprar quem ele quiser. O jogador pode distribuir as cartas entre os jogadores. Por exemplo, <strong>2</strong> cartas para o jogador A, <strong>5</strong> cartas para o jogador B e <strong>3</strong> cartas para o jogador C. Assim como ele pode dar as <strong>10</strong> cartas para um só jogador. Só pode ser jogada na vez do jogador.
+                    </p>
+                </div>
+
+                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/Bucho Inchado.jpg" height="300px">
+                </div>
+            </div>
+
+            <!-- Culatra -->
+            <div class="order-1 bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5 fw-normal">Culatra</h2>
+
+                    <p class="lead">
+                        Uma carta poderosa, que lhe defende de pequenos e grandes ataques. Por isso, cuidado, pois com ela <span class="fw-normal fst-italic">"o tiro pode sair pela culatra"</span>.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Modo ataque:</strong> Em uma sequência de <strong>+2</strong> e/ou <strong>+4</strong> impede o jogador de comprar cartas, fazendo com que os outros jogadores comprem o valor das cartas que os mesmos jogaram. Assim, <span class="fw-bold fst-italic">o tiro sai pela culatra</span>. Pode ser jogada como um corte.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Modo defesa:</strong> O jogador escolhe outro jogador, se o escolhido não tiver <strong>+2</strong> ou <strong>+4</strong>, ele comprará +2 cartas. Caso ele tiver, o jogador que jogou a <strong>Culatra</strong> comprará <strong>2 cartas</strong> + o valor da carta que o jogador escolhido mostrou (Essa carta deve ser descartada). Assim, <span class="fw-bold fst-italic">o tiro sai pela culatra</span>. Só pode ser jogada na vez do jogador.
+                    </p>
+                </div>
+                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/Culatra.jpg" height="300px">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+            <!-- TT -->
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5 fw-normal">TT</h2>
+                    <p class="lead">
+                        Com essa carta em jogo, é ativada a regra que o jogador que não tiver cartas para jogar deve comprar... <strong>Até ter!</strong>
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Detalhes:</strong> Essa carta ativa a regra que jogador que não tiver alguma carta para jogar, deve ficar comprando cartas até conseguir uma para jogar. Não há limites de quantidade de cartas. A regra só é desativada quando a vez volta ao jogador que jogou a <strong>TT</strong>. Ou seja, se a vez dele for pulada, a regra continua. Só pode ser jogada na vez do jogador.
+                    </p>
+                </div>
+
+                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/TT.jpg" height="300px">
+                </div>
+            </div>
+
+            <!-- Trocar as mãos -->
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5 fw-normal">Trocar as mãos</h2>
+
+                    <p class="lead">
+                        Possibilita haver uma troca de mãos entre jogadores.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Detalhes:</strong> O jogador pode escolher alguém para trocar de maõs com ele, ou dois jogadores para trocarem de mãos, ou até mesmo não fazer nada. Os jogadores são obrigados a obedecer quem jogou esta carta. Só pode ser jogada na vez do jogador.
+                    </p>
+                </div>
+                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/Troca as mãos.jpg" height="300px">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+            <!-- Try Again -->
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5 fw-bolder text-danger">Try Again</h2>
+                    <p class="lead">
+                        Traz de volta ao jogo alguém que acabou de bater! Anulando instantaneamente a vitória desse jogador.
+                    </p>
+
+                    <p style="text-align: justify !important;">
+                        <strong>Detalhes:</strong> Deve ser jogada <strong>imediatamente</strong> após um jogador bater. Não importando se é vez do jogador ou não, ou se ele está bloqueado. O <strong>Try Again</strong> faz com que o jogador que bateu volte ao jogo comprando <strong>5 cartas</strong>. Se carta utilizada para vencer for coberta, o <strong>Try Again</strong> não pode mais ser jogado para aquele jogador. Se ela for a última carta do jogador, ele sai e todos os outros jogadores são obrigados a comprar <strong>3 cartas</strong>. Só pode ser jogada se algum jogador bater e imediatamente a isso, ou se ela for sua última carta.
+                    </p>
+                </div>
+
+                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="/assets/dist/img/Try Again.jpg" height="300px">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-light p-5">
+        <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+                <img src="assets/dist/img/icons8_male_user_127px.png" alt="John Doe" class="mr-3" style="width:60px;">
+            </div>
+
+            <div class="flex-grow-1 ms-3">
+                <div class="d-flex flex-column flex-sm-row">
+                    <div>
+                        <div class="fs-5 fw-bold">David Gomesh</div>
+                        <div>Copyright © 2021-2022</div>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-center border-start border-dark ms-sm-3 ps-3 mt-2 mt-sm-0">
+                        <a href="https://github.com/DavidGomesh" class="text-dark text-decoration-none fw-bold" role="button" target="_blank"><i class="fa-brands fa-github me-1"></i>DavidGomesh</a>
+                        <a href="https://www.instagram.com/david_gomesh/" class="text-dark text-decoration-none fw-bold" role="button" target="_blank"><i class="fa-brands fa-instagram me-1"></i>david_gomesh</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="mt-3 pt-3 border-top" style="text-align: justify !important;">
+            Agradecimentos especiais à 
+            <span class="fw-bold fst-italic">Anderson Castro</span>,
+            <span class="fw-bold fst-italic">Cristóvão Rios</span>,
+            <span class="fw-bold fst-italic">Daniel Lima</span>,
+            <span class="fw-bold fst-italic">Daniel Rocha</span>,
+            <span class="fw-bold fst-italic">David Alysson</span>,
+            <span class="fw-bold fst-italic">Eduardo Cadilhe</span>,
+            <span class="fw-bold fst-italic">Júlio Evêncio</span>,
+            <span class="fw-bold fst-italic">Kim Costa</span>,
+            <span class="fw-bold fst-italic">Lucas Felipe</span>,
+            <span class="fw-bold fst-italic">Marcelo Jhonis</span>,
+            <!-- <span class="fw-bold fst-italic">Mayara Cartágenes</span>,
+            <span class="fw-bold fst-italic">Michelle Lima</span>, -->
+            <span class="fw-bold fst-italic">Paulo Roberto</span>,
+            <span class="fw-bold fst-italic">Samara Lima</span>,
+            <span class="fw-bold fst-italic">Tadeu Viégas</span>,
+            <span class="fw-bold fst-italic">Victor Vinicius</span>,
+            <span class="fw-bold fst-italic">Valter Oliveira</span>,
+            <span class="fw-bold fst-italic">Wesley Versart</span>
+            e qualquer outra pessoa que eu possa ter esquecido.
+        </p>
+
+        <p>
+            Muito obrigado por tornar esse jogo ainda mais divertido e especial. <span class="text-danger">♥️</span>
+        </p>
+    </footer>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
